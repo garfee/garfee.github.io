@@ -320,6 +320,49 @@
     </div>
 
     <footer class="post-footer">
+
+<!--打赏-->
+ 
+     
+     <div class ="post-donate">
+       <div id="donate_board" class="donate_bar center">
+         <a id="btn_donate" class="btn_donate" href="javascript:;" title="Donate 打赏"></a>
+         <span class="donate_txt">
+            &uarr;<br>
+            
+             Enjoy it ? Please donate me !  此文有用？求鼓励，求支持！
+                      
+         </span>
+         <br>
+       </div>  
+   
+       <div id="donate_guide" class="donate_bar center hidden">
+         
+           <a href="/images/ali.jpg" title="支付宝打赏" class="fancybox" rel="article0"       style="float:left;margin-left:25%;margin-right:2px;">
+           <img src="/images/ali.jpg" title="支付宝打赏" height="164px" width="164px">
+           </a> 
+           
+ 
+       
+        <a href="/images/wx.jpg" title="微信打赏" class="fancybox" rel="article0">
+          <img src="/images/wx.jpg" title="微信打赏" height="164px" width="164px">
+        </a>
+       
+     
+       </div>
+   
+       <script type="text/javascript">
+         document.getElementById('btn_donate').onclick = function(){
+           $('#donate_board').addClass('hidden');
+           $('#donate_guide').removeClass('hidden');
+         }
+       </script>
+     </div>
+ 
+     
+ 
+<!--打赏结束-->
+
       
         <div class="post-tags">
           
@@ -429,7 +472,7 @@
 
           <div class="site-state-item site-state-tags">
             <a href="/tags">
-              <span class="site-state-item-count">8</span>
+              <span class="site-state-item-count">7</span>
               <span class="site-state-item-name">标签</span>
               </a>
           </div>

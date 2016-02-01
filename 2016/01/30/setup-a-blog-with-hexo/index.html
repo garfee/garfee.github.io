@@ -63,7 +63,7 @@
 <meta property="og:url" content="http://garfee.info/2016/01/30/setup-a-blog-with-hexo/index.html">
 <meta property="og:site_name" content="Life of Ivy & Garfee">
 <meta property="og:description" content="最近开始打算把Wordpress上的博客迁到Github上，google了一下，发现了Hexo这个博客系统。简单看了一下文档，还挺容易的，就糙、快、猛的干起来了。Hexo的文档虽然比较简洁，但对于Hexo新手来说，有些概念交代的太少了。所以还是决定稍微写一下，方便自己回忆以及需要的人熟悉Hexo。">
-<meta property="og:updated_time" content="2016-01-31T02:14:03.000Z">
+<meta property="og:updated_time" content="2016-01-31T02:14:07.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="使用Hexo搭建个人Blog">
 <meta name="twitter:description" content="最近开始打算把Wordpress上的博客迁到Github上，google了一下，发现了Hexo这个博客系统。简单看了一下文档，还挺容易的，就糙、快、猛的干起来了。Hexo的文档虽然比较简洁，但对于Hexo新手来说，有些概念交代的太少了。所以还是决定稍微写一下，方便自己回忆以及需要的人熟悉Hexo。">
@@ -355,6 +355,49 @@ $ 编辑Blog/theme/&lt;theme name&gt;/_config.yml 来修改主题配置项
     </div>
 
     <footer class="post-footer">
+
+<!--打赏-->
+ 
+     
+     <div class ="post-donate">
+       <div id="donate_board" class="donate_bar center">
+         <a id="btn_donate" class="btn_donate" href="javascript:;" title="Donate 打赏"></a>
+         <span class="donate_txt">
+            &uarr;<br>
+            
+             Enjoy it ? Please donate me !  此文有用？求鼓励，求支持！
+                      
+         </span>
+         <br>
+       </div>  
+   
+       <div id="donate_guide" class="donate_bar center hidden">
+         
+           <a href="/images/ali.jpg" title="支付宝打赏" class="fancybox" rel="article0"       style="float:left;margin-left:25%;margin-right:2px;">
+           <img src="/images/ali.jpg" title="支付宝打赏" height="164px" width="164px">
+           </a> 
+           
+ 
+       
+        <a href="/images/wx.jpg" title="微信打赏" class="fancybox" rel="article0">
+          <img src="/images/wx.jpg" title="微信打赏" height="164px" width="164px">
+        </a>
+       
+     
+       </div>
+   
+       <script type="text/javascript">
+         document.getElementById('btn_donate').onclick = function(){
+           $('#donate_board').addClass('hidden');
+           $('#donate_guide').removeClass('hidden');
+         }
+       </script>
+     </div>
+ 
+     
+ 
+<!--打赏结束-->
+
       
         <div class="post-tags">
           
@@ -462,7 +505,7 @@ $ 编辑Blog/theme/&lt;theme name&gt;/_config.yml 来修改主题配置项
 
           <div class="site-state-item site-state-tags">
             <a href="/tags">
-              <span class="site-state-item-count">8</span>
+              <span class="site-state-item-count">7</span>
               <span class="site-state-item-name">标签</span>
               </a>
           </div>
